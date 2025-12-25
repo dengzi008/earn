@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>区块链项目投研工具</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 背景效果 -->
+    <canvas id="particleCanvas"></canvas>
+    <div class="grid-background"></div>
+    
+    <!-- 主容器 -->
+    <div class="main-container">
+        <!-- 顶部区域：标题和头像 -->
+        <div class="header-section">
+            <!-- 页面标题 -->
+            <div class="page-title">
+                <h1>
+                    <span class="title-chinese">
+  <span class="a-letter">A8</span>社区：
+</span>
+                    <span class="title-english">Crypto豪哥</span>
+                </h1>
+            </div>
+            
+            <!-- 头像区域 -->
+            <div class="center-avatar">
+                <div class="avatar-wrapper">
+                    <input type="file" id="avatarInput" accept="image/*" style="display: none;">
+                    <label for="avatarInput" class="avatar-upload">
+                        <img id="avatarPreview" src="" alt="上传头像">
+                        <div class="upload-overlay">
+                            <span class="upload-icon">📷</span>
+                            <span class="upload-text">点击上传头像</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 六大板块网格 -->
+        <div class="sectors-grid">
+            <div class="sector" data-sector="1">
+                <div class="sector-card">
+                    <h3 class="sector-title">赛道时机</h3>
+                    <textarea class="sector-content" placeholder="记录项目所属赛道、市场时机、行业趋势等信息..."></textarea>
+                </div>
+            </div>
+            
+            <div class="sector" data-sector="2">
+                <div class="sector-card">
+                    <h3 class="sector-title">启动资金</h3>
+                    <textarea class="sector-content" placeholder="记录项目启动所需资金、融资情况、资金用途等信息..."></textarea>
+                </div>
+            </div>
+            
+            <div class="sector" data-sector="3">
+                <div class="sector-card">
+                    <h3 class="sector-title">成本损耗</h3>
+                    <textarea class="sector-content" placeholder="记录运营成本、开发成本、维护费用等成本信息..."></textarea>
+                </div>
+            </div>
+            
+            <div class="sector" data-sector="4">
+                <div class="sector-card">
+                    <h3 class="sector-title">利润收入</h3>
+                    <textarea class="sector-content" placeholder="记录收入来源、盈利模式、预期收益等信息..."></textarea>
+                </div>
+            </div>
+            
+            <div class="sector" data-sector="5">
+                <div class="sector-card">
+                    <h3 class="sector-title">风险因素</h3>
+                    <textarea class="sector-content" placeholder="记录技术风险、市场风险、监管风险等风险信息..."></textarea>
+                </div>
+            </div>
+            
+            <div class="sector" data-sector="6">
+                <div class="sector-card">
+                    <h3 class="sector-title">收益类型</h3>
+                    <textarea class="sector-content" placeholder="记录收益类型、收益周期、收益预期等信息..."></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 保存/清除按钮 -->
+    <div class="control-buttons">
+        <button id="saveBtn" class="control-btn">💾 保存</button>
+        <button id="clearBtn" class="control-btn">🗑️ 清除</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
